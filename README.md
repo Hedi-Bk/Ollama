@@ -47,4 +47,3 @@ An intelligent assistant designed for recruiters to analyze CVs automatically. U
 - **Purpose:** Store embeddings for fast retrieval during RAG queries  
 
 ---
-```
