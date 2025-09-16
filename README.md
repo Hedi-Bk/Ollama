@@ -20,6 +20,9 @@ An intelligent assistant designed for recruiters to analyze CVs automatically. U
 4. Recruiter asks questions via the prompt.
 5. Ollama LLM generates answers based solely on the CVs.
 
+<img width="676" height="453" alt="image8" src="https://github.com/user-attachments/assets/28efe62c-c477-4df3-a4c9-c05a092cafeb" />
+
+
 ## Example
 
 | Question                       | Answer                             |
