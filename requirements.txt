@@ -1,0 +1,6 @@
+#pinecone-client==2.2.1  
+#ollama
+#langchain-ollama
+#langchain-chroma
+#pypdf
+#rich : interprete  le Mardown 
