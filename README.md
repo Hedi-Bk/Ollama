@@ -30,16 +30,21 @@ An intelligent assistant designed for recruiters to analyze CVs automatically. U
 | Who has React experience?      | John Doe, Jane Smith               |
 | Contact info of top candidates | john@example.com, jane@example.com |
 
-## Getting Started
+## 🔧 Models Used & Architecture
 
-```python
-from langchain_chroma import Chroma
-from langchain_ollama import OllamaLLM, OllamaEmbeddings
+**1. LLM (Local Language Model) – Ollama**  
+- **Model name:** `gemma3:4b`  
+- **Purpose:** Text generation and understanding RAG prompts  
+- **Settings:** `temperature = 0.5` → balance between creativity and precision  
 
-# Load LLM and embeddings
-model = OllamaLLM(model="gemma3:4b", temperature=0.5)
-embeddings = OllamaEmbeddings(model="mxbai-embed-large")
+**2. Embeddings – Ollama Embeddings**  
+- **Model name:** `mxbai-embed-large`  
+- **Purpose:** Convert CVs/documents into vectors for semantic search  
 
-# Initialize vector database
-vector_store = Chroma(collection_name="cvs_collection", persist_directory="./chroma_langchain_db", embedding_function=embeddings)
+**3. Vector Database – Chroma**  
+- **Collection name:** `cvs_collection`  
+- **Directory:** `./chroma_langchain_db`  
+- **Purpose:** Store embeddings for fast retrieval during RAG queries  
+
+---
 ```
